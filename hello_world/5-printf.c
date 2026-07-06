@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - Prints using print f
+ * main - Prints using printf
  *
  * Return 0 always
  */
