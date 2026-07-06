@@ -1,12 +1,14 @@
-#include <studio.sh>
+#include <stdio.h>
 
 /*
  *
- * main
+ * main - Prints using print f
  *
- * return 0
+ * Return 0 always
  *
  */
+int main(void)
 {
-printf("with proper grammar, but the outcome is a piece of art,")
+printf("with proper grammar, but the outcome is a piece of art,");
+return (0);
 }
