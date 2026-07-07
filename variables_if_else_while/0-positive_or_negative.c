@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include <time.h>
-#include <math.h>
+#include <stdio.h>
 
 /**
  * main - generates random number and prints out if pos or neg
