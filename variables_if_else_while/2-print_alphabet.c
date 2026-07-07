@@ -1,16 +1,16 @@
 #include <stdio.h>
 
 /**
-* main - printing alphabet in lower case alphabet
-*
-* return: 0 always
-*/
-
+ * main - prints all the lowercase alphabet
+ *
+ * Return: always 0 (success)
+ */
 int main(void)
 {
+
 int i;
 
-for (i = 97; i <= 127; i++)
+for (i = 97; i <= 122; i++)
 {
 putchar(i);
 }
