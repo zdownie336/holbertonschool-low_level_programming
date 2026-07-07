@@ -14,9 +14,9 @@ int count = 10;
 	for (i = 97; i <= 122; i++)
 	{
 		_putchar(i);
+		_putchar('\n');
 	}
 count--;
 	}
-	_putchar('\n');
 	return (0);
 }
