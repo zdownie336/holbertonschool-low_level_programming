@@ -1,7 +1,8 @@
 #include <stdlib.h>
 #include <time.h>
 #include <math.h>
-/*
+
+/**
  * main - generates random number and prints out if pos or neg
  *
  * Return: always 0
@@ -22,7 +23,7 @@ printf("%d is negative\n", n);
 }
 else
 {
-printdf("%d is 0\n", n);
+printf("%d is 0\n", n);
 }
 return (0);
 }
