@@ -13,6 +13,6 @@ return n;
 
 int main(void)
 {
-printf("%d\n", sum_to_n(11));
+printf("%d\n", sum_to_n(55));
 return 0;
 }
