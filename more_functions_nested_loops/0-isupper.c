@@ -10,12 +10,14 @@ int _isupper(int c)
 {
 if (c >= 65 && c <= 90)
 {
-printf("%c: %d\n", c, _isupper(c));
+_putchar("%c: %d", c, _isupper(c));
+_putchar('\n');
 return (1);
 }
 else
 {
-printf("%c: %d\n", c, _isupper(c));
+_putchar("%c: %d", c, _isupper(c));
+_putchar('\n');
 return (0);
 }
 }
