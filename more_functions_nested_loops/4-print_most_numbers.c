@@ -1,23 +1,20 @@
 #include "main.h"
 
 /**
- * print_most_variables - printing everything besides 2 and 4
- *
+ * print_most_numbers - print numbers from 0 to 9, except 2 and 4
  */
 
 void print_most_numbers(void)
 {
-int digit;
-digit = '0';
-	while (digit <= '9')
-	{
-		digit++;
+	int n;
 
-		if (digit == '2' || digit == '4')
+	for (n = 0; n <= 9; i++)
+	{
+		if (n == 2 || n == 4)
 		{
 			continue;
 		}
-		_putchar(digit + '0');
+		_putchar(n + '0');
 	}
-_putchar('\n');
+	_putchar('\n');
 }
