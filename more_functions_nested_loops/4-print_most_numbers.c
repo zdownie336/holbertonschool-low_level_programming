@@ -11,12 +11,13 @@ int digit;
 digit = '0';
 	while (digit <= '9')
 	{
+		digit++;
+
 		if (digit == '2' || digit == '4')
 		{
 			continue;
 		}
-		digit++;
-		_putchar(digit);
+		_putchar(digit + '0');
 	}
 _putchar('\n');
 }
