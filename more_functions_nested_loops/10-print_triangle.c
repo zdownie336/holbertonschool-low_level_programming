@@ -6,15 +6,15 @@
  */
 void print_triangle(int size)
 {
-	int l;
+	int i;
 	int r;
 
-	if (l <= 0)
+	if (size <= 0)
 	{
 		_putchar('\n');
 		return;
 	}
-	for (l = 0; l <= size; l++)
+	for (i = 0; i <= size; i++)
 	{
 		if (size <= 0)
 		{
@@ -23,7 +23,7 @@ void print_triangle(int size)
 		}
 	for (r = size; r >= 1; r--)
 	{
-		if (r <= l)
+		if (r <= i)
 		{
 			_putchar('#');
 		}
