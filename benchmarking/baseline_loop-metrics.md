@@ -11,3 +11,5 @@ Exec time: 0.092569 seconds
 3rd execution
 iterations: 100000000
 exec timeL 0.091654 seconds
+
+they all have a variance of 0.001 seconds, this is probably due to each consecutive execution that it means the program is in the cache for easier execution.
