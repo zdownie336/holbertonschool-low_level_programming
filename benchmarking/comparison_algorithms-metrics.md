@@ -1,7 +1,7 @@
 the recorded times for each execution
 
 1st execution:
-Naive algorithm result: 625025000 '\n'
+Naive algorithm result: 625025000
 Naive algorithm time: 0.539204 seconds
 Single-pass algorithm result: 25000
 Single-pass algorithm time: 0.000017 seconds
