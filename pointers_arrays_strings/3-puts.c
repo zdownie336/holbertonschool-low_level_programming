@@ -1,11 +1,8 @@
 #include "main.h"
 /**
-* _puts - used to print a string
-* _putchar - used to display the string
+*_puts - used to print a string*
 *@str: the string being printed
-*
-* Return: string
-*/
+**/
 
 void _puts(char *str)
 {
