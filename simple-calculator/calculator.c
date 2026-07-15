@@ -2,8 +2,6 @@
 
 /**
  * add - used for addition of two integars
- * @anum1: for first digit
- * @anum2: for second digit
  */
 
 void add(void)
@@ -21,8 +19,6 @@ void add(void)
 
 /**
  * subtract - used to subtract two integars
- * @snum1: for first digit
- * @snum2L for second digit
  */
 
 void subtract(void)
@@ -40,8 +36,6 @@ void subtract(void)
 
 /**
  * mult - to multipy two integars
- * @mnum1: integar one
- * @mnum2: integar two
  */
 
 void mult(void)
@@ -61,8 +55,6 @@ void mult(void)
 
 /**
  * divide - used for division of two integars besides 0
- * @dnum1: first integar
- * @dnum2: second integar, error if zero
  */
 
 void divide(void)
@@ -94,6 +86,7 @@ void divide(void)
 int main(void)
 {
 	int user;
+
 	printf("What would you like to use?\n");
 	printf("1) Add\n");
 	printf("2) Subtract\n");
@@ -105,26 +98,21 @@ int main(void)
 	{
 		printf("Choice: ");
 		scanf("%d", &user);
-
 		if (user == 1)
 		{
 			add();
-			continue;
 		}
 		else if (user == 2)
 		{
 			subtract();
-			continue;
 		}
 		else if (user == 3)
 		{
 			mult();
-			continue;
 		}
 		else if (user == 4)
 		{
 			divide();
-			continue;
 		}
 		else if (user == 0)
 		{
@@ -132,9 +120,7 @@ int main(void)
 		}
 		else
 		{
-			printf("Invalide Choice\n");
-			printf("Choice: ");
-			scanf("%d", &user);
+			printf("Invalid Choice\n");
 		}
 	}
 printf("Bye\n");
