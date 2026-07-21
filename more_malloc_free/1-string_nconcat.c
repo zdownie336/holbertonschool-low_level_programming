@@ -34,44 +34,28 @@ unsigned int _strlength(char *str)
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	char *catstr;
-	unsigned int size;
-	int i;
-	unsigned int j;
+char *catstr;
+unsigned int size, i, j;
 
-	if (s1 == NULL)
-		s1 = "";
+if (s1 == NULL)
+	s1 = "";
+if (s2 == NULL)
+	s2 = "";
 
-	if (s2 == NULL)
-		s2 = "";
-	i = 0;
-	if (n < _strlength(s2))
-	{
-		n = _strlength(s2);
-	}
+if (n >= _strlength(s2))
+	n = _strlength(s2);
 
-	size = _strlength(s1) + n;
-	catstr = malloc(size + 1);
+size = _strlength(s1) + n;
+catstr = malloc(size + 1);
+if (catstr == NULL)
+	return (NULL);
 
-	if (catstr == NULL)
-	{
-		return (NULL);
-	}
+for (i = 0; s1[i] != '\0'; i++)
+	catstr[i] = s1[i];
 
-	while (*s1 != '\0')
-	{
-		catstr[i] = *s1;
-		s1++;
-		i++;
-	}
-	j = 0;
-	while (*s2 != '\0' && j < n)
-	{
-		catstr[i] = *s2;
-		s2++;
-		i++;
-		j++;
-	}
-	catstr[i] = '\0';
-	return (catstr);
+for (j = 0; j < n && s2[j] != '\0'; j++)
+	catstr[i + j] = s2[j];
+
+catstr[i + j] = '\0';
+return (catstr);
 }
