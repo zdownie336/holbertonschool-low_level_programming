@@ -31,23 +31,23 @@ int **alloc_grid(int width, int height)
 	while (h < height)
 	{
 		grid[h] = malloc(sizeof(int) * width);
-		h++;
-
 		if (grid[h] == NULL)
 		{
-			while (h--)
+			while (h > 0)
 			{
+				h--;
 				free(grid[h]);
 			}
 			free(grid);
 			return (NULL);
 		}
 
-	while (w < width)
-	{
-		grid[h][w] = 0;
-		w++;
-	}
+		while (w < width)
+		{
+			grid[h][w] = 0;
+			w++;
+		}
+		h++;
 	}
 	return (grid);
 }
