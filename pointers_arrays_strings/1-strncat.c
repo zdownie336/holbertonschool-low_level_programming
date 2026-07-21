@@ -1,6 +1,25 @@
 #include "main.h"
 
 /**
+ * get_len - get length of the string
+ * @str: string input
+ *
+ * Return: length of the string
+ */
+int get_len(char *str)
+{
+	int len;
+
+	len = 0;
+
+	while (str[len] != '\0')
+	{
+		len++;
+	}
+	return (len);
+}
+
+/**
  * _strncat - combines both strings and assigns it to dest until index n
  * @src: first string
  * @dest: second string and the output of the concatination
@@ -8,25 +27,21 @@
  *
  * Return: the concatinated string
  */
-
 char *_strncat(char *dest, char *src, int n)
 {
-	int i;
-	int j;
+	int src_len;
+	int dest_len;
+	int index;
 
-	i = 0;
+	src_len = get_len(src);
+	dest_len = get_len(dest);
+	index = 0;
 
-	while (dest[i] != '\0')
+	while (index < n && index < src_len)
 	{
-		i++;
+		dest[dest_len + index] = src[index];
+		index++;
 	}
 
-	while (j < n && src[j] != '\0')
-	{
-		dest[i] = src[j];
-		i++;
-		j++;
-	}
-	dest[i] = '\0';
 	return (dest);
 }
