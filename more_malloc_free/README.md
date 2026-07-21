@@ -1,1 +1,1 @@
-this file contains explinations of how to execute each program and what they do
+This file contains information information how to execute each program and what they do
