@@ -16,7 +16,7 @@ char *copy(char *str)
 	int i;
 
 	srclength = 0;
-	while (src[srclength] != '\0')
+	while (str[srclength] != '\0')
 	{
 		srclength++;
 	}
@@ -24,13 +24,13 @@ char *copy(char *str)
 	dest = malloc(sizeof(char) * (srclength + 1));
 	if (dest == NULL)
 	{
-		retunr NULL;
+		return (NULL);
 	}
 
 	i = 0;
 	while (i < srclength)
 	{
-		dest[i] = src[i]
+		dest[i] = str[i];
 		i++;
 	}
 
@@ -39,14 +39,22 @@ char *copy(char *str)
 	return (dest);
 }
 
+/**
+* new_dog - new doggo's information
+* @name: name of the dog
+* @age: age of the pupper
+* @owner: who owns the doggo
+*
+* Return: New doggo's information
+*/
 
-dog_t *new_dog(char *name, float age, char *owner);
+dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *new_dog;
 	char *dog_name;
 	char *dog_owner;
 
-	if (dog_name == NULL || dog_owner == NULL)
+	if (name == NULL || owner == NULL)
 	{
 		return (NULL);
 	}
@@ -56,7 +64,7 @@ dog_t *new_dog(char *name, float age, char *owner);
 	{
 		return (NULL);
 	}
-	dog_name = copier(name);
+	dog_name = copy(name);
 	if (dog_name == NULL)
 	{
 		free(new_dog);
@@ -65,7 +73,7 @@ dog_t *new_dog(char *name, float age, char *owner);
 	new_dog->name = dog_name;
 	new_dog->age = age;
 
-	dog_owner = copier(owner);
+	dog_owner = copy(owner);
 	if (dog_owner == NULL)
 	{
 		free(new_dog);
