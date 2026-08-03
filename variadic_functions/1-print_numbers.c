@@ -38,7 +38,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 			printf("%c", separator[j]);
 			j = j + 1;
 		}
-		printf("%d\n", va_arg(numbers, int));
+		printf("%d", va_arg(numbers, int));
 		i = i + 1;
 	}
 	printf("\n");
