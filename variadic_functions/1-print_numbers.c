@@ -33,7 +33,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	while (i < n - 1)
 	{
 		j = 0;
-		while (separator[j] == '\0')
+		while (separator[j] != '\0')
 		{
 			printf("%c", separator[j]);
 			j = j + 1;
