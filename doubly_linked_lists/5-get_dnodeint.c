@@ -5,15 +5,15 @@
  * @head: the head node
  * @index: index looking for.
  *
- * return the nth node.
+ * Return: the node being indexed.
 */
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 {
 	unsigned int i;
 	dlistint_t *current;
-	
+
 	i = 0;
-	
+
 	if (head == NULL)
 		return (NULL);
 
@@ -23,7 +23,7 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 		current = current->next;
 		i++;
 	}
-	
+
 	if (index != i)
 		return (NULL);
 
